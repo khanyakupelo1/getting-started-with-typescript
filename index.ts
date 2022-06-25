@@ -1,32 +1,8 @@
-console.log("Defining Interface");
-interface User{
-    name: string;
-    age: number;
-}
+///<reference path="src/defining-types.ts"/>
+const s = require('./src/defining-types');
 
-const user: User = {
-    name: "John",
-    age: 30
-}
+console.log(s.getUser())
 
-console.log('Working types as params')
+s.displayUserName(s.getUser())
 
-const displayUserName = (user: User) => {
-    console.log(user.name);
-}
-
-displayUserName(user);
-
-
-console.log('Working types as return')
-
-const getAge = (user: User): number => {
-    return user.age;
-}
-
-const getUser = (): User => user;
-
-
-
-
-
+s.getAge(s.getUser())
