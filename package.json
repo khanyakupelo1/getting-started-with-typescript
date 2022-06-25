@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/khanyakupelo1/getting-started-with-typescript/issues"
   },
-  "homepage": "https://github.com/khanyakupelo1/getting-started-with-typescript#readme"
+  "homepage": "https://github.com/khanyakupelo1/getting-started-with-typescript#readme",
+  "devDependencies": {
+    "ts-node": "^10.8.1"
+  }
 }
